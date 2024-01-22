@@ -1,0 +1,27 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "specific": "npx cypress run --spec ./cypress/e2e/amazonlogin.spec.cy.js --browser edge --headed",
+    "allspec": "npx cypress run --spec ./cypress/e2e/**/*spec.cy.js --browser edge --headed",
+    "cloud": "npx cypress run --record --key 4304bbeb-1b88-4435-9b12-ddbcdea7deb6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "all": "^0.0.0",
+    "cors": "^2.8.5",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress": "^13.6.2"
+  }
+}
